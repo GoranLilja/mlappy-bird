@@ -27,7 +27,7 @@ class Bird {
         // - velocity of bird
         // Hidden nodes: 4
         // Output: Jump?
-        this.nn = new NeuralNetwork(4, 2, 1)
+        this.nn = new NeuralNetwork(5, 2, 1)
     }
 
     setNetwork(nn) {
@@ -41,7 +41,7 @@ class Bird {
         inputs[1] = walls[0].x / width
         inputs[2] = walls[0].h / height
         inputs[3] = (walls[0].gap + walls[0].h) / height
-        //inputs[4] = this.vel // TODO: Normalize somehow
+        inputs[4] = this.vel // TODO: Normalize somehow
 
         const output = this.nn.predict(inputs)[0]
         if (output > 0.5) {

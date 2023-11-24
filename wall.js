@@ -2,7 +2,7 @@ class Wall {
     constructor(w = 20) {
         this.x = width
         this.h = random(20, 300)
-        this.gap = random(20, 80)
+        this.gap = random(20, 30)
         this.w = w
     }
 

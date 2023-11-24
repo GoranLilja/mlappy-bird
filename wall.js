@@ -1,8 +1,8 @@
 class Wall {
     constructor(w = 20) {
         this.x = width
-        this.h = random(20, 300)
-        this.gap = random(20, 50)
+        this.h = random(20, 350)
+        this.gap = random(40, 50)
         this.w = w
     }
 
